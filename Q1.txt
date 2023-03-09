@@ -1,0 +1,8 @@
+Q1.
+
+a) ab(a+b)*ba
+
+b) (a+b)*aaaa(a+b)*bbbb(a+b)* + (a+b)*bbbb(a+b)*aaaa(a+b)*
+
+c) (a+b)*a(a+b)(a+b)(a+b)(a+b)(a+b)(a+b)(a+b)(a+b)(a+b)(a+b)(a+b)(a+b)(a+b)(a+b)
+

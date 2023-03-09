@@ -64,23 +64,8 @@ print(my_table)
 
 # Display the DFA and NFA
 dfa.display()
+nfa.display()
 
-
-
-
-# # m3 = regularExpression.nfaPosition().toDFA()
-#
-# m3 = regularExpression.nfaThompson()
-#
-# m4 = m3.toDFA()
-# print(type(m4))
-#
-# m5 = DFA()
-# print(type(m5))
-# # print(m5.evalWordP("001"))
-#
-# # try
-# print(m4.evalWordP("aaa"))
 
 
 

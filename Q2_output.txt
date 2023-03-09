@@ -1,0 +1,48 @@
+Enter a Regular Expression: ab(a+b)*ba
+Enter a list of strings: abba abaabbba baab baba abab
+Time to convert to NFA: 0.00046372413635253906 seconds
+Time to convert to DFA: 0.0002446174621582031 seconds
+Number of states in the NFA: 16
+Number of states in the DFA: 6
++----------+-----------------+------------------------+--------------+------------------------+
+| Strings  | e-NFA Accepted  |        Time NFA        | DFA Accepted |        Time DFA        |
++----------+-----------------+------------------------+--------------+------------------------+
+|   abba   |       True      | 6.318092346191406e-05  |     True     | 6.4373016357421875e-06 |
+| abaabbba |       True      | 0.00011920928955078125 |     True     |  5.7220458984375e-06   |
+|   baab   |      False      | 5.0067901611328125e-06 |    False     |  5.7220458984375e-06   |
+|   baba   |      False      | 4.291534423828125e-06  |    False     | 2.384185791015625e-06  |
+|   abab   |      False      | 4.8160552978515625e-05 |    False     | 3.0994415283203125e-06 |
++----------+-----------------+------------------------+--------------+------------------------+
+
+
+Enter a Regular Expression: (a+b)*aaaa(a+b)*bbbb(a+b)* + (a+b)*bbbb(a+b)*aaaa(a+b)*
+Enter a list of strings: baaaabbbba abbbbaaaab babababa aaabbbab aaaabbbbaaaabbbb
+Time to convert to NFA: 0.004645586013793945 seconds
+Time to convert to DFA: 0.008396387100219727 seconds
+Number of states in the NFA: 82
+Number of states in the DFA: 49
++------------------+-----------------+-----------------------+--------------+------------------------+
+|     Strings      | e-NFA Accepted  |        Time NFA       | DFA Accepted |        Time DFA        |
++------------------+-----------------+-----------------------+--------------+------------------------+
+|    baaaabbbba    |       True      | 0.0005664825439453125 |     True     | 1.0967254638671875e-05 |
+|    abbbbaaaab    |       True      | 0.0005617141723632812 |     True     | 7.3909759521484375e-06 |
+|     babababa     |      False      | 0.0002791881561279297 |    False     | 5.0067901611328125e-06 |
+|     aaabbbab     |      False      | 0.0003037452697753906 |    False     | 5.0067901611328125e-06 |
+| aaaabbbbaaaabbbb |       True      |  0.001241922378540039 |     True     | 9.059906005859375e-06  |
++------------------+-----------------+-----------------------+--------------+------------------------+
+
+Enter a Regular Expression: (a+b)*a(a+b)(a+b)(a+b)(a+b)(a+b)(a+b)(a+b)(a+b)(a+b)(a+b)(a+b)(a+b)(a+b)(a+b)
+Enter a list of strings: abbbbbbbbbbbbbb aaaaaaaaaaaaaaa bbbbbabbbbbbbbbbbbbb ab abababba
+Time to convert to NFA: 0.008510828018188477 seconds
+Time to convert to DFA: 119.07466077804565 seconds
+Number of states in the NFA: 94
+Number of states in the DFA: 32769
++----------------------+-----------------+------------------------+--------------+------------------------+
+|       Strings        | e-NFA Accepted  |        Time NFA        | DFA Accepted |        Time DFA        |
++----------------------+-----------------+------------------------+--------------+------------------------+
+|   abbbbbbbbbbbbbb    |       True      |    0.00030517578125    |     True     | 2.2411346435546875e-05 |
+|   aaaaaaaaaaaaaaa    |       True      | 0.0009458065032958984  |     True     |  1.33514404296875e-05  |
+| bbbbbabbbbbbbbbbbbbb |       True      | 0.0003306865692138672  |     True     | 1.0728836059570312e-05 |
+|          ab          |      False      | 3.6716461181640625e-05 |    False     | 2.1457672119140625e-06 |
+|       abababba       |      False      | 0.0002117156982421875  |    False     | 5.0067901611328125e-06 |
++----------------------+-----------------+------------------------+--------------+------------------------+
