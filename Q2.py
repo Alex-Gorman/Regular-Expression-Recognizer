@@ -63,8 +63,8 @@ print("Number of states in the DFA: "+str(len(dfa)))
 print(my_table)
 
 # Display the DFA and NFA
-dfa.display()
-nfa.display()
+# dfa.display()
+# nfa.display()
 
 
 
